@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actor 1 - Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #121212;
+            color: #ffd700;
+        }
+
+        .profile-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .profile-header img {
+            width: 300px;
+            height: 400px;
+            border: 2px solid #ffd700;
+            border-radius: 8px;
+        }
+
+        .profile-details {
+            color: #fff;
+            line-height: 1.6;
+            flex: 1;
+        }
+
+        .profile-details h1 {
+            margin: 0;
+            color: #ffd700;
+        }
+
+        .latest-movies {
+            margin-top: 30px;
+        }
+
+        .latest-movies h2 {
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+
+        .movie-list {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .movie-item {
+            background-color: #1e1e1e;
+            border: 2px solid #ffd700;
+            border-radius: 8px;
+            padding: 10px;
+            width: 140px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+        }
+
+        .movie-item img {
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .movie-item p {
+            color: #ffd700;
+            margin: 10px 0 0;
+            font-size: 14px;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: linear-gradient(45deg, #ffd700, #b8860b);
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .back-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="images/gabbie.jpg" alt="Actor 1">
+            <div class="profile-details">
+                <h1>Actor 1</h1>
+                <p><strong>Biography:</strong> Actor 1 is known for their roles in action movies and has won numerous awards for their performances.</p>
+                <p><strong>Filmography:</strong>
+                    <ul>
+                        <li>Movie 1 (2025)</li>
+                        <li>Movie 2 (2024)</li>
+                    </ul>
+                </p>
+                <p><strong>Awards:</strong> Best Actor 2023, Action Star of the Year 2024</p>
+                <a href="index.html" class="back-button">Back to Movies</a>
+            </div>
+        </div>
+        <div class="latest-movies">
+            <h2>آخرین فیلم‌ها</h2>
+            <div class="movie-list">
+                <div class="movie-item">
+                    <img src="images/movie1.jpg" alt="Movie 1">
+                    <p>Movie 1</p>
+                </div>
+                <div class="movie-item">
+                    <img src="images/movie2.jpg" alt="Movie 2">
+                    <p>Movie 2</p>
+                </div>
+                <div class="movie-item">
+                    <img src="images/movie3.jpg" alt="Movie 3">
+                    <p>Movie 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
